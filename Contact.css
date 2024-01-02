@@ -1,0 +1,42 @@
+.contactSection1 form{
+    margin: var(--bigger-padding-td) var(--padding-td);
+     background-color: rgb(23 52 87 / 30%);
+     padding: var(--padding-td);
+     border-radius: 10px;
+     color: var(--blue);
+     font-weight: bold;
+}
+
+.contactSection1 form  *{
+    display :block;
+    width: 100%;
+}
+
+.contactSection1 form .row{
+    display: flex;
+}
+
+.contactSection1 form  > div{
+    margin-bottom: 20px;
+}
+
+.contactSection1 input, .contactSection1 textarea {
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.contactSection1 form > *:last-child{
+    background-color: var(--blue);
+    color: var(--myWhite);
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contactSection1 .row > *:first-child{
+    margin-right: 20px;
+}
+
+.contactSection1 form label{
+    margin-bottom: 10px;
+}

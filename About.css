@@ -1,0 +1,53 @@
+.aboutSection1 .wrap{
+    display: flex;   
+}
+
+.aboutSection1 .wrap .image{
+    border-radius: 10px;
+}
+
+.aboutSection1 .wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.aboutSection1 .wrap > *:first-child{
+    margin-right: 20px;
+    height: 400px;
+    width: 30%;
+}
+
+.aboutSection1 .wrap > *:last-child{
+    /* flex-grow: 3; */
+    width: 70%;
+}
+
+.aboutSection1{
+    padding: var(--bigger-padding-td) var(--padding-td);
+}
+
+.aboutSection1 .wrap > *:last-child h1{
+    margin-bottom: 20px;
+}
+
+.aboutSection1 .wrap > *:last-child p{
+    line-height:var(--text-line-height);
+}
+
+.lineHeight{
+    line-height:var(--text-line-height);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .aboutSection1 .wrap{
+        flex-direction: column;
+    }
+
+    .aboutSection1 .wrap > *:first-child, .aboutSection1 .wrap > *:last-child{
+        margin-right: 0;
+        width: 100%;
+    }
+}

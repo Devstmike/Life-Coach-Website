@@ -1,0 +1,17 @@
+.testimonialSection1{
+    padding: var(--padding-td);
+}
+
+.testimonialSection1 h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonialSection1 small{
+    display: block;
+    text-align: right;
+}
+
+.testimonialSection1 .testimonials{
+    margin:var(--padding-td) 0;
+}

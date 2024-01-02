@@ -1,0 +1,34 @@
+.servicesSection1 .wrapper .pricing{
+    border: 3px solid var(--blue);
+    border-radius: 10px;
+    padding: 50px;
+    margin-right: 20px;
+}
+
+.servicesSection1 .wrapper{
+    display: flex;
+}
+
+.servicesSection1{
+    padding: var(--padding-td);
+    min-height: 100vh;
+}
+
+.servicesSection1 .wrapper .pricing:hover{
+    color: var(--myWhite);
+    background-color: var(--blue);
+}
+
+.servicesSection1 > *{
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .servicesSection1 .wrapper{
+        flex-direction: column;
+    }
+
+    .servicesSection1 .wrapper > *{
+        margin-bottom: 50px;
+    }
+}

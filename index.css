@@ -14,6 +14,8 @@
     --myWhite : white;
     --myfont: 'Poppins', sans-serif;
     --padding-td:50px;
+    --bigger-padding-td:150px;
+    --text-line-height:40px;
 }
 
 body{
@@ -26,6 +28,11 @@ header{
     padding: var(--padding-td);
     background-color: var(--blue);
     color: var(--myWhite);
+}
+
+i.menuBar{
+    display: none;
+    font-size: 2rem;
 }
 
 header ul{
@@ -46,7 +53,7 @@ header a:hover{
 }
 
 .section1{
-    background-image: linear-gradient(180deg,rgba(1,1,1,0.1),rgba(1,1,1,0.1)), url("./Assets/images/headerimage.jpg");
+    background-image: linear-gradient(180deg,rgba(1,1,1,0.5),rgba(1,1,1,0.5)), url("./Assets/images/headerimage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
@@ -59,7 +66,7 @@ header a:hover{
 
 .section1 p{
     font-size: 2rem;
-    color: var(--blue);
+    color: var(--myWhite);
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -143,13 +150,13 @@ header a:hover{
 }
 
 .section4 .aboutme{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     padding: var(--padding-td);
 }
 
 .section4 .aboutme > *{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: 10px;
   }
 
@@ -236,5 +243,100 @@ footer .icons{
     gap: 10px;
     grid-template-columns: repeat(4,1fr);
     width: 50%;
+}
+
+.showMenu{
+    display: flex !important;
+}
+
+nav small{
+    display: none;
+    cursor: pointer ;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    :root{
+        --padding-td:30px;
+        --bigger-padding-td:150px;
+        --text-line-height:40px;
+    }
+
+    i.menuBar{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        height: 100%;
+        right: 0;
+        top: 0;
+        width: 300px;
+        background-color: rgba(39,59,84,0.6);
+    }
+    
+    nav ul{
+        flex-direction: column;
+    }
+    
+    nav li{
+        margin-bottom: 20px;
+    }
+
+    .section2{
+        padding-right: var(--padding-td);
+        padding-left: var(--padding-td);
+
+    }
+
+    .section3 .row ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section3 ul li:first-child, .section3 ul li:last-child{
+        width: 100%;
+    }
+    
+    .section4 .aboutme{
+        flex-direction: column;
+    }
+
+    .section4 .aboutme >*{
+        width: 100% !important;
+        margin-right: 0;
+    }
+
+    .section4 form{
+        margin: var(--padding-td);
+        margin-bottom: 100px;
+        padding: var(--padding-td);
+    }
+    .section4 form .inputs > *{
+        display: block;
+        width: 100%;
+        margin-bottom: var(--padding-td);
+    }
+
+    footer .columns{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    footer .columns > *{
+        margin-bottom: 50px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
 
 }
+
+
+
+/* rsponsive */
+/* home, contact, testimonials,about  */
