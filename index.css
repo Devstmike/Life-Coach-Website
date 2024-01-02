@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --blue : #0A2342;
+    --cream :#FFFDF7;
+    --myWhite : white;
+    --myfont: 'Poppins', sans-serif;
+    --padding-td:50px;
+}
+
+body{
+    font-family: var(--myfont);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-td);
+    background-color: var(--blue);
+    color: var(--myWhite);
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    padding: 0 20px;
+}
+
+header a{
+    color: var(--myWhite);
+}
+
+header a:hover{
+    border-bottom: 5px solid var(--myWhite);
+    border-radius: 5px;
+}
+
+.section1{
+    background-image: linear-gradient(180deg,rgba(1,1,1,0.1),rgba(1,1,1,0.1)), url("./Assets/images/headerimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.section1 p{
+    font-size: 2rem;
+    color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.divButton{
+    background-color: var(--blue);
+    color: var(--myWhite);
+    padding:8px 15px;
+    border-radius: 20px;
+    border: 3px solid var(--blue);
+}
+
+.divButton:hover{
+    --div-hover-bg :rgba(1,1,1,0.7);
+    --div-hover-border :3px solid var(--blue);
+    background-color: var(--div-hover-bg);
+    border: var(--div-hover-border)
+}
+
+.divButton:hover button{
+    /* color: var(--blue); */
+    font-weight: bold;
+
+}
+
+.divButton button{
+    color: var(--myWhite);
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--padding-td) 300px;
+}
+
+.section2 > *{
+    margin-bottom: 40px;
+}
+
+.section3 .row ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.section3 ul li:first-child{
+    width: 50%;
+}
+
+.section3 ul li:last-child{
+    width: 50%;
+}
+
+.section3{
+    background-color: var(--blue);
+    padding: var(--padding-td);
+    color: var(--myWhite);
+}
+
+.section3 h1{
+    text-align: center;
+    margin-bottom: var(--padding-td);
+}
+
+.section3 li{
+    padding-bottom: var(--padding-td);
+}
+
+
+.section4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.section4 .aboutme{
+    border: 1px solid red;
+    display: flex;
+    padding: var(--padding-td);
+}
+
+.section4 .aboutme > *{
+    border: 1px solid green;
+    margin: 10px;
+  }
+
+.section4 .aboutme > *:first-child{
+    width: 40%;
+}
+
+.section4 .aboutme > *:last-child{
+    width: 60%;
+}
+
+.section4 .words  > *{
+    margin-bottom: 20px;
+}
+
+
+.section4 > h1:first-child{
+    text-align: center;
+    margin: var(--padding-td ) 0;
+}
+
+.section4 form{
+    background-color: rgba(1,1,1,0.4);
+    margin: 150px;
+    padding: 20px 100px;
+    border-radius: 20px;
+}
+
+.section4 form > *{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section4 form input{
+    width: 32%;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.section4 .image{
+    border-radius: 10px;
+}
+
+/* .section4 form input:last-child:hover{
+    font-size: 1rem;
+} */
+
+footer{
+    background-color: var(--blue);
+    padding: 100px var(--padding-td);
+    color: var(--myWhite);
+}
+
+footer a{
+    color: var(--myWhite);
+}
+
+footer .columns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer .columns > p:first-child{
+    text-align: left;
+}
+
+footer li{
+    padding-bottom: 20px;
+}
+
+footer > p:first-child, footer .wrap a{
+    line-height: 40px;
+}
+
+
+footer .icons{
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    width: 50%;
+
+}
