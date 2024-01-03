@@ -52,6 +52,19 @@ header a:hover{
     border-radius: 5px;
 }
 
+.activeLink{
+    border-radius: 10px !important;
+    padding: 8px !important;
+    color: var(--blue) !important;
+    background-color: white !important;
+}
+
+/* .activeLink:hover{  
+    color: white;
+    background-color: var(--blue);
+    border-color: white;
+} */
+
 .section1{
     background-image: linear-gradient(180deg,rgba(1,1,1,0.5),rgba(1,1,1,0.5)), url("./Assets/images/headerimage.jpg");
     background-repeat: no-repeat;
@@ -112,11 +125,13 @@ header a:hover{
     margin-bottom: 40px;
 }
 
+
 .section3 .row ul{
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
+
 
 .section3 ul li:first-child{
     width: 50%;
@@ -141,6 +156,12 @@ header a:hover{
     padding-bottom: var(--padding-td);
 }
 
+.section3 .row li i{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+
+}
 
 .section4 img{
     width: 100%;
@@ -198,8 +219,12 @@ header a:hover{
 
 .section4 .image{
     border-radius: 10px;
+    height: 500px;
 }
 
+.lineHeight{
+    line-height:var(--text-line-height);
+}
 /* .section4 form input:last-child:hover{
     font-size: 1rem;
 } */
@@ -249,13 +274,39 @@ footer .icons{
     display: flex !important;
 }
 
+.showCancel{
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+nav{
+    /* transition: all linear 100000s; */
+    animation: fadeIn 1s;
+}
+
+
 nav small{
     display: none;
     cursor: pointer ;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+.animate__animated.animate__fadeIn{
+    animation-duration: 10s;
+}
+
+
+.makeSticky{
+    position: sticky;
+    top: 0;
+    background-color: rgba(9, 31, 59 ,0.9);
+}
+
+
+
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (max-width: 992px) {
     :root{
         --padding-td:30px;
         --bigger-padding-td:150px;
@@ -268,6 +319,7 @@ nav small{
 
     nav{
         display: none;
+        opacity: 0;
     }
 
     nav{
@@ -276,7 +328,8 @@ nav small{
         right: 0;
         top: 0;
         width: 300px;
-        background-color: rgba(39,59,84,0.6);
+        background-color: rgba(9, 31, 59 ,0.6);
+        padding-top: 20px;
     }
     
     nav ul{
@@ -297,6 +350,8 @@ nav small{
         flex-direction: column;
         width: 100%;
     }
+
+    
 
     .section3 ul li:first-child, .section3 ul li:last-child{
         width: 100%;
@@ -337,6 +392,9 @@ nav small{
 }
 
 
-
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 /* rsponsive */
 /* home, contact, testimonials,about  */

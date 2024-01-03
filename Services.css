@@ -23,7 +23,16 @@
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+.wrapper > .pricing:nth-child(2){
+    animation-iteration-count: infinite;
+    background-color: rgba(55, 112, 181, 0.8);
+    color: var(--myWhite);
+    border: none;
+}
+
+
+
+@media only screen and (max-width: 992px) {
     .servicesSection1 .wrapper{
         flex-direction: column;
     }
