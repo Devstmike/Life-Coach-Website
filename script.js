@@ -28,17 +28,6 @@ window.onscroll = () => {
     }
 }
 
-addActive.forEach(element => {
-   
-
-    element.onclick = () => {
-        // addActive.forEach(element => {
-        //     element.querySelector("a").classList.remove("activeLink")        
-        // });
-
-        element.querySelector("a").classList.add("activeLink")
-    }
-});
 
 
 window.onload = () => {
